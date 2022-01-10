@@ -1,0 +1,31 @@
+<!--Latitude,Longitude values given in the below tag are directly used for centre-->
+<div>
+  <agm-map [latitude]="latitude2" [longitude]="longitude2" [zoom]="8" (mapClick)="onChoseLocation($event)">
+
+    <agm-marker [latitude]="latitude1" [longitude]="longitude1"></agm-marker>
+    <agm-marker [latitude]="latitude2" [longitude]="longitude2"></agm-marker>
+    <agm-marker [latitude]="latitude3" [longitude]="longitude3"></agm-marker>
+    <agm-marker [latitude]="latitude4" [longitude]="longitude4"></agm-marker>
+    <agm-marker [latitude]="latitude5" [longitude]="longitude5"></agm-marker>
+    <agm-marker [latitude]="latitude6" [longitude]="longitude6"></agm-marker>
+    <agm-marker [latitude]="latitude7" [longitude]="longitude7"></agm-marker>
+    <agm-marker [latitude]="latitude8" [longitude]="longitude8"></agm-marker>
+    <agm-marker [latitude]="latitude9" [longitude]="longitude9"></agm-marker>
+    <agm-marker [latitude]="latitude10" [longitude]="longitude10"></agm-marker>
+    <agm-marker [latitude]="latitude11" [longitude]="longitude11"></agm-marker>
+    <agm-marker [latitude]="latitude12" [longitude]="longitude12"></agm-marker>
+    <agm-marker [latitude]="latitude13" [longitude]="longitude13"></agm-marker>
+    <agm-marker [latitude]="latitude14" [longitude]="longitude14"></agm-marker>
+    <agm-marker [latitude]="latitude15" [longitude]="longitude15"></agm-marker>
+
+    <agm-polyline [visible]="true" [strokeWeight]="5" [strokeOpacity]="1" [strokeColor]="'#808080'">
+      <agm-polyline-point *ngFor="let coordinate of latlng; let i=index" [latitude]="coordinate[0]"
+        [longitude]="coordinate[1]">
+
+      </agm-polyline-point>
+    </agm-polyline>
+
+  </agm-map>
+
+
+</div>
