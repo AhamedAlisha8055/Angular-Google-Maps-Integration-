@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
+Note:- create an api key and include it in the app.module.ts file in imports->agmcoremodule.forRoot->apiKey:
+
+the project will run after you place the api key in its location and the route is given above
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
